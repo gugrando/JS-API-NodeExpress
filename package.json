@@ -5,9 +5,12 @@
   "name": "express-api-project",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "scripts": {
-    "start":"node ./src/server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
