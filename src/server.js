@@ -15,5 +15,5 @@ app.get("/ender/:id/:user" , (req, res)=>{ //Express Source's response
 
 app.get("/users", (req, res)=>{
   const { page, limit } = req.query
-  res.send(`Page ${page}. Shows: ${limit}`)
+  res.send(`Page: ${page}, look:${limit}`)
 })
