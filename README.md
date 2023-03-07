@@ -1,2 +1,4 @@
 # NODE + EXPRESS API
 #IN CONSTRUCTION
+
+##TO RUN: npm run dev
