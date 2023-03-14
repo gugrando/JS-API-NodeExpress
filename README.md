@@ -1,9 +1,3 @@
 # NODE + EXPRESS API
-<<<<<<< HEAD
 
 # IN CONSTRUCTION
-=======
-#IN CONSTRUCTION
-
-##TO RUN: npm run dev
->>>>>>> a952b45eabb616e6b5af23656fc43633819d49ec
