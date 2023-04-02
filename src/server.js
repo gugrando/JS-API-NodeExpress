@@ -1,14 +1,20 @@
-require("express-async-errors")
-const AppError = require("./utils/AppError")
+require("express-async-errors") //imports express-async-errors
+const AppError = require("./utils/AppError") //const AppError receives the AppError from utils
 const { request, response } = require("express")
-const express = require("express")//Import express
-const app = express()//Starts express
+const express = require("express")//Import express for const express
+const app = express()//Starts express in const app
 const PORT = 3333//Define the web PORT
 
-const routes = require("./routes")
+//receives all routes from ./routes
+const routes = require("./routes") 
 
+//tell express to use .json with default
 app.use(express.json())
+
+//tell express to 'listen' routes in the const routes from './routes'
 app.use(routes)
+
+
 app.use (( error, request, response, next )=>{
   if(error instanceof AppError){
     return response.status(error.statusCode).json({
@@ -24,7 +30,7 @@ app.use (( error, request, response, next )=>{
   })
 })
 
-app.listen(PORT, ()=>{//Express listen the PORT)
+app.listen(PORT, ()=>{//Express listening the PORT)
   console.log(`Server is running on port ${PORT}`)
 })
 

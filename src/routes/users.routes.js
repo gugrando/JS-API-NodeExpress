@@ -8,3 +8,4 @@ const usersController = new UsersController()
 usersRoutes.post("/", usersController.create)
 
 module.exports = usersRoutes;
+// Export the Routes
