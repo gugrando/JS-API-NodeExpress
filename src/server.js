@@ -33,8 +33,6 @@ app.use (( error, request, response, next )=>{
 app.listen(PORT, ()=>{//Express listening the PORT)
   console.log(`Server is running on port ${PORT}`)
 })
-
-
 // app.get("/ender/:id/:user" , (req, res)=>{ //Express Source's response 
 //   const {id, user} = req.params//Destructure the req.params
 //   res.send(`Hello, World! - Message's ID is ${id} - User: ${user}`)//This is the res
