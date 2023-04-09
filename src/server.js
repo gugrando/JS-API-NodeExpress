@@ -37,3 +37,6 @@ app.listen(PORT, ()=>{//Express listening the PORT)
 //   const {id, user} = req.params//Destructure the req.params
 //   res.send(`Hello, World! - Message's ID is ${id} - User: ${user}`)//This is the res
 // })
+
+//Server that recive all routes
+console.log("teste de GIT") 
