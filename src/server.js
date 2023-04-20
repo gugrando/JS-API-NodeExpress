@@ -26,7 +26,7 @@ app.use (( error, request, response, next )=>{
 
   return response.status(500).json({
     status: "error",
-    message: "Server Internal Error"
+    message: "Server Internal Error!!"
   })
 })
 
