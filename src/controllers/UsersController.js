@@ -7,8 +7,8 @@ class UsersController{
     const { name, yo, email} = request.body
   
     //Check if the name exists, than throw the AppError that had imported previously
-    if(!name){
-      throw new AppError("Nome Obrigatório!")
+    if(!name || !yo || !email){
+      throw new AppError("Dados Obrigatórios")
     }
 
     // If there is no error, give the answer with 200 status code and a .json

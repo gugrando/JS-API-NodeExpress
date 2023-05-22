@@ -1,4 +1,5 @@
 require("express-async-errors") //imports express-async-errors
+const database = require("./database/sqlite")
 const AppError = require("./utils/AppError") //const AppError receives the AppError from utils
 const { request, response } = require("express")
 const express = require("express")//Import express for const express
@@ -14,6 +15,7 @@ app.use(express.json())
 //tell express to 'listen' routes in the const routes from './routes'
 app.use(routes)
 
+database();
 
 app.use (( error, request, response, next )=>{
   if(error instanceof AppError){
